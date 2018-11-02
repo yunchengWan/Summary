@@ -1,0 +1,32 @@
+问题描述
+
+ 在先引入dagger的情况下引入room报错 -> 警告: Schema export directory is not provided to the annotation processor so we cannot export the schema. You can either provide `room.schemaLocation` annotation processor argument OR set exportSchema to false.
+
+解决办法
+ 
+ 解决方式一：
+
+给RoomDatabase设置exportSchema注解为false。
+
+
+ @Database(entities = { YourEntity.class }, version = 1, exportSchema = false)
+ 
+public abstract class MovieDatabase extends RoomDatabase {
+
+   ...
+
+}
+
+
+解决方式二：
+javaCompileOptions {
+
+            annotationProcessorOptions {
+
+                arguments = ["room.schemaLocation": "$projectDir/schemas".toString()]
+
+            }
+
+        }
+
+https://blog.csdn.net/hexingen/article/details/78725958
