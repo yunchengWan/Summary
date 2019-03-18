@@ -1,0 +1,15 @@
+=====================================================
+		ProgressBar
+
+设置ProgressBar颜色
+android:indeterminateTint="@color/color_xxx"
+android:indeterminateTintMode="src_atop"
+
+=====================================================
+
+=====================================================
+
+设置空间阴影（material design）
+android:elevation="2dp" //阴影大小
+
+=====================================================

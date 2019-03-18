@@ -1,0 +1,21 @@
+
+------------------------------->
+
+q: Finished with error: ProcessException: Process "E:\Project\Flutter\flutter_app\android\gradlew.bat" exited abnormally:Downloading https://services.gradle.org/distributions/gradle-4.10.2-all.zip
+a:
+
+------------------------------------------>
+
+-------------------------------->
+
+q:运行flutter doctor时提示 " X Android license status unknown"
+a:执行sdkmanager --update后执行 flutter doctor --android-licenses
+
+---------------------------------------------->
+
+-------------------------------->
+
+q:运行sdkmanager --update时提示"NoClassDefFoundError"
+a:Jdk版本问题，重新安装Jdk1.8即可
+
+-------------------------------------------------->
